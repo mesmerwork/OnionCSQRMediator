@@ -18,6 +18,7 @@ namespace OnionTemplateEx.API.Controllers
         [Route("Get")]
         public async Task<IActionResult> Get()
         {
+            //asd
             var query = new GetAllCountryQuery();
             return Ok(await _mediator.Send(query));
         }
